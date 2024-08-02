@@ -1,0 +1,52 @@
+*/ External css */
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+:root {
+     --primary-color: #293043;
+}
+
+body{
+     background: #fff;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     width: 100%;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+     height: 100%;
+     width: 100%;
+     position: relative;
+}
+
+.nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #fff;
+     padding: 0 20px; 
+     border-bottom: 1.8px solid #dadada;
+}
+
+.nav h2{
+     /* color: #fff; */
+}
+
+.links a{
+     text-decoration: none;
+     list-style-type: none;
+     /* color: #fff; */
+}
+
+.btn-mode i{
+     
+}
+
+
+
