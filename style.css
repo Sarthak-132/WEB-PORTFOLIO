@@ -6,9 +6,16 @@
      box-sizing: border-box;
 }
 
+*/ root */
+
 :root {
-     --primary-color: #293043;
+     --primary-color: #1D1A39;
+     --secondary-color: #190019;
+     --Third-color: #26425A;
+     --fourth-color: #06142E;
+     --fifth-color: #1B3358;
 }
+
 
 body{
      background: #fff;
@@ -19,34 +26,117 @@ body{
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.navbar{
+/* main div  */
+
+.main{
      height: 100%;
      width: 100%;
      position: relative;
 }
+
+/* navbar/  */
 
 .nav{
      display: flex;
      justify-content: space-between;
      align-items: center;
      background-color: #fff;
-     padding: 0 20px; 
-     border-bottom: 1.8px solid #dadada;
+     padding: 0 5vw; 
+     border-bottom: 1px solid rgba(198, 196, 198, 0.667);
 }
 
 .nav h2{
-     /* color: #fff; */
+     color: rgb(192, 2, 2);
+     cursor: pointer;
 }
+
+/* links in navbar  */
 
 .links a{
-     text-decoration: none;
-     list-style-type: none;
-     /* color: #fff; */
+    text-decoration: none;
+    list-style-type: none; 
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0 1.5vw;
 }
 
-.btn-mode i{
+/* DARK MODE BTN  */
+
+ #mode{
+    margin-left: 1vw;
+    padding: 3px 5px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+ /* .btn-menu{
+    padding: 3px 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 1vw;
+} */
+
+/* mobile navbar */
+.mobile-navbar-btn{
+     display: none;
+     background: transparent;
+     cursor: pointer;
+}
+
+
+.ri-close-large-line{
+     display: none;
+}
+
+/* RESPONSIVE WEBSITE  */
+
+/* FOR MEDIUM WIDTH OF SCREEN DEVICE */
+/* here 1 em = 16px so 768px = 62em ( round figure ) */
+@media (max-width: 60em) {
+     .mobile-navbar-btn{
+          display:block;
+          z-index: 99;
+          border: 2px solid black;
+          padding: 1px 3px 2px;
+     }
+
+     .nav{
+          position: relative
+     }
      
+     /* #mode{
+          display: block;
+          background: rgb(47, 41, 41);
+     } */
+
+     .links{
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          top: 0;
+          left: 0;
+          background: #b3e8f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+     }
+
+     .links a {
+          padding: 1em;
+     }
+     
+     #mode {
+          margin: 1em;
+     }
+
+
 }
 
 
+/* FOR SMALL WIDTH OF SCREEN DEVICE */
+
+@media (max-width: 500px) {
+    
+}
 
